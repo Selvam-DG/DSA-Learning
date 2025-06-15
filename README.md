@@ -14,7 +14,6 @@ DSA-Learning/
 ├── templates/ # Code templates and boilerplates
 └── resources/ # Playlists, patterns, and useful links
 ```
-```yaml
 
 ---
 
@@ -80,4 +79,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-```
