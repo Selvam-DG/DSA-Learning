@@ -146,7 +146,9 @@ Recursive Breakdown:
 
 ```
 ---
+## Example 2
 ![merge-sort-450](https://github.com/user-attachments/assets/1f8022df-e2e9-4d41-b058-0f135282ac89)
+![merge-sort-400](https://github.com/user-attachments/assets/a1323483-a0aa-47c4-b1df-b29eb3d6a08f)
 
 ---
 ## Time & Space Complexity
