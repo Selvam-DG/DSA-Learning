@@ -1,0 +1,21 @@
+# Virtual enviromentns
+env/
+/env
+venv
+
+#Ignore VScode settings
+.vscode/
+# Ignore pycache
+__pycache__/
+*.pyc
+# ignore .env
+.env
+*.env
+./.env
+# Ignore Django migrations
+**/migrations/
+# Ignore compiled Python files
+*.pyo
+*.pyc
+*.pyd
+*.ipynb_checkpoints
