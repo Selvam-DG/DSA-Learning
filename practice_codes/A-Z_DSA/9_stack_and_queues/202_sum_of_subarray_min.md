@@ -60,6 +60,50 @@ class Solution:
 
 ---
 
+## Solution
+
+```python
+class Solution:
+    def sumSubarrayMins(self, arr: List[int]) -> int:
+        result = 0
+        nse = self.nextSmallerElement(arr)
+        psee = self.previousSmallerEqualElemet(arr)
+        total = 0
+        mod = 10**9 + 7
+        for i, num in enumerate(arr):
+            left = i - psee[i]
+            right = nse[i] - i
+            total = (total + (right * left * num) % mod ) % mod
+
+        return total
+
+    def nextSmallerElement(self, arr):
+        nse = [n] * n
+        stack = []
+        for i, num in enumerate(arr):
+            while stack and arr[stack[-1]] >= arr[i]:
+                stack.pop()
+            nse[i]  = stack[-1] if stack else n
+            stack.append(i)
+        return nse
+               
+        
+    def previousSmallerEqualElement(self, arr):
+        psee = [-1] * n
+        stack = []
+        for i in range(n):
+            while stack and arr[stack[-1]] > arr[i]:
+                stack.pop()
+            psee[i] = stack[-1] if stack else -1
+            stack.append(i)
+        return psee
+
+
+```
+
+---
+
+
 ## Key Points
 
 - [Important insight 1]

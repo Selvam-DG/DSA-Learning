@@ -88,18 +88,18 @@ class Solution:
         right = n-1
         total = 0
 
-        while l < r:
+        while left < right:
             if height[l] <= height[r]: 
                 if height[left] >= leftMax:
                     leftMax = height[left]
                 else:
-                    total += leftMax - height[l]
-                l += 1
+                    total += leftMax - height[left]
+                left += 1
             else:
                 if height[right] >= rightMax:
                     rightMax = height[right]
                 else:
-                    total += rightMax - height[r]
-                r -= 1
+                    total += rightMax - height[right]
+                right -= 1
         return total
 ```
