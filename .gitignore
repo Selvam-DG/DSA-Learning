@@ -19,3 +19,7 @@ __pycache__/
 *.pyc
 *.pyd
 *.ipynb_checkpoints
+
+template.md
+test.py
+
